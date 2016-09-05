@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Simple.css: a lightweight, responsive and modern CSS framework.</title>
+	<link rel="stylesheet" href="dist/simple.css">
+	<style>
+        header > h4,
+        header > h5 {
+            margin-top: 4rem;
+            margin-bottom: 2rem;
+        }
+        .bg-grey {
+            background-color: #efefef;
+            padding: 1rem;
+            border-radius: .3rem;
+        }
+        .grid-hero {
+            margin-top: 10rem;
+            margin-bottom: 10rem;
+        }
+        .grid-hero h3 {
+            margin-bottom: 5rem;
+        }
+        .grid-hero .notes {
+            margin: 4rem 0;
+        }
+        .grid-footer {
+            color: #888;
+            margin-top: 4rem;
+            margin-bottom: 4rem;
+        }
+        .grid-footer a {
+            color: #666;
+        }
+        .notes {
+            margin: 4rem 0;
+            color: #666;
+        }
+        .empty .icon {
+            font-size: 4rem;
+        }
+        .code {
+            color: #666;
+        }
+        .code .com {
+            color: #adadad;
+        }
+        .code .tag {
+            color: #4452c0;
+        }
+        .code .atn {
+            color: #666;
+        }
+        .code .atv {
+            color: #e06870;
+        }
+    </style>
+</head>
+<body>
+	<section id="grid" class="container grid-960">
+        <header class="text-center"><h4>flexbox grid</h4></header>
+        <section class="notes">
+            <p><strong>Layout</strong> includes flexbox based responsive grid system with 12 columns. </p>
+        </section>
+        <div class="columns">
+            <div class="column">
+                <div class="bg-grey"></div>
+            </div>
+            <div class="column">
+                <div class="bg-grey"></div>
+            </div>
+            <div class="column">
+                <div class="bg-grey"></div>
+            </div>
+            <div class="column">
+                <div class="bg-grey"></div>
+            </div>
+            <div class="column">
+                <div class="bg-grey"></div>
+            </div>
+            <div class="column">
+                <div class="bg-grey"></div>
+            </div>
+            <div class="column">
+                <div class="bg-grey"></div>
+            </div>
+            <div class="column">
+                <div class="bg-grey"></div>
+            </div>
+            <div class="column">
+                <div class="bg-grey"></div>
+            </div>
+            <div class="column">
+                <div class="bg-grey"></div>
+            </div>
+            <div class="column">
+                <div class="bg-grey"></div>
+            </div>
+            <div class="column">
+                <div class="bg-grey"></div>
+            </div>
+        </div>
+
+        <div class="columns">
+            <div class="column col-12">
+                <div class="bg-grey">col-12 (100%)</div>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column col-9">
+                <div class="bg-grey">col-9 (75%)</div>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column col-9">
+                <div class="bg-grey">col-9 (75%)</div>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column col-6">
+                <div class="bg-grey">col-6 (50%)</div>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column col-3">
+                <div class="bg-grey">col-3 (25%)</div>
+            </div>
+        </div>
+
+        <section class="notes">
+            <p>Add the class <code>columns</code> to a container with the class <code>container</code>. And add any element you want with classname <code>column</code> inside the container. These columns will take up the space equally. You can specific the width of each column by adding class <code>col-[1-12]</code>.</p>
+            <p>And you can add the class <code>col-gapless</code> to have gapless columns.</p>
+        </section>
+
+        <div class="columns col-gapless">
+            <div class="column col-6">
+                <div class="bg-grey">col-6 (gapless)</div>
+            </div>
+            <div class="column col-6">
+                <div class="bg-grey">col-6 (gapless)</div>
+            </div>
+        </div>
+
+        <section class="notes">
+            <p>Add the class <code>col-multiline</code> to have a multiline grid.</p>
+        </section>
+
+        <div class="columns col-multiline">
+            <div class="column col-8">
+                <div class="bg-grey">col-8</div>
+            </div>
+            <div class="column col-8">
+                <div class="bg-grey">col-8</div>
+            </div>
+        </div>
+
+        <!-- layout example -->
+        <pre class="code lang-html">
+        &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;container&quot;</span>&gt;
+            &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;columns&quot;</span>&gt;
+                &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-6&quot;</span>&gt;col-6&lt;<span class="tag">/div</span>&gt;
+                &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-3&quot;</span>&gt;col-3&lt;<span class="tag">/div</span>&gt;
+                &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-2&quot;</span>&gt;col-2&lt;<span class="tag">/div</span>&gt;
+                &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-1&quot;</span>&gt;col-1&lt;<span class="tag">/div</span>&gt;
+            &lt;<span class="tag">/div</span>&gt;
+
+            &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;columns col-gapless&quot;</span>&gt;
+                &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-6&quot;</span>&gt;col-6&lt;<span class="tag">/div</span>&gt;
+                &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-6&quot;</span>&gt;col-6&lt;<span class="tag">/div</span>&gt;
+            &lt;<span class="tag">/div</span>&gt;
+        &lt;<span class="tag">/div</span>&gt;
+        </pre>
+    </section>
+
+    <section id="responsive" class="container grid-960">
+        <header class="text-center"><h4>responsive grid</h4></header>
+        <div class="columns">
+            <div class="column col-md-6">
+                <div class="bg-grey">col-md-6</div>
+            </div>
+            <div class="column col-md-3">
+                <div class="bg-grey">col-md-3</div>
+            </div>
+            <div class="column col-md-3">
+                <div class="bg-grey">col-md-3</div>
+            </div>
+        </div>
+
+        <div class="columns">
+            <div class="column col-sm-6">
+                <div class="bg-grey">col-sm-6</div>
+            </div>
+            <div class="column col-sm-3">
+                <div class="bg-grey">col-sm-3</div>
+            </div>
+            <div class="column col-sm-3">
+                <div class="bg-grey">col-sm-3</div>
+            </div>
+        </div>
+
+        <div class="columns">
+            <div class="column col-xs-6">
+                <div class="bg-grey">col-xs-6</div>
+            </div>
+            <div class="column col-xs-3">
+                <div class="bg-grey">col-xs-3</div>
+            </div>
+            <div class="column col-xs-3">
+                <div class="bg-grey">col-xs-3</div>
+            </div>
+        </div>
+
+        <section class="notes">
+            <p>Spectre provides a neat responsive layout grid system. There are <code>.col-xs-[1-12]</code>, <code>.col-sm-[1-12]</code> and <code>.col-md-[1-12]</code> available for flexible grid across mobile, tablet and desktop viewport usage.</p>
+            <ul>
+                <li>For window width less than <strong>480px</strong>, all columns will show as a single row.</li>
+                <li><code>col-xs-[1-12]</code> apply to window width greater than or equal to <strong>481px</strong>. </li>
+                <li><code>col-sm-[1-12]</code> apply to window width greater than or equal to <strong>601px</strong>. </li>
+                <li><code>col-md-[1-12]</code> apply to window width greater than or equal to <strong>841px</strong>. </li>
+            </ul>
+        </section>
+
+        <!-- layout example -->
+        <pre class="code lang-html">
+        &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;container&quot;</span>&gt;
+            &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;columns&quot;</span>&gt;
+                &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-xs-6&quot;</span>&gt;col-xs-6&lt;<span class="tag">/div</span>&gt;
+                &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-xs-3&quot;</span>&gt;col-xs-3&lt;<span class="tag">/div</span>&gt;
+                &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;column col-xs-3&quot;</span>&gt;col-xs-3&lt;<span class="tag">/div</span>&gt;
+            &lt;<span class="tag">/div</span>&gt;
+        &lt;<span class="tag">/div</span>&gt;
+        </pre>
+
+        <section class="notes">
+            <p>For hiding elements on specific viewport sizes, there are classes <code>.hide-xs</code>, <code>.hide-sm</code>, <code>.hide-md</code>, <code>.hide-lg</code> and <code>.hide-xl</code> available.</p>
+            <ul>
+                <li><code>hide-xs</code> hides elements when the viewport is smaller than or equal to <strong>480px</strong>. </li>
+                <li><code>hide-sm</code> hides elements when the viewport is smaller than or equal to <strong>600px</strong>. </li>
+                <li><code>hide-md</code> hides elements when the viewport is smaller than or equal to <strong>840px</strong>. </li>
+                <li><code>hide-lg</code> hides elements when the viewport is smaller than or equal to <strong>960px</strong>. </li>
+                <li><code>hide-xl</code> hides elements when the viewport is smaller than or equal to <strong>1280px</strong>. </li>
+            </ul>
+            <p>Spectre also has a responsive web test tool Responsive Resizer. You can use it locally in the directory <code>/tools/resizer</code> or online.</p>
+            <p><a href="http://picturepan2.github.io/spectre/tools/resizer/" target="_blank" class="btn btn-primary">Responsive Resizer</a></p>
+        </section>
+    </section>
+</body>
+</html>
