@@ -984,5 +984,162 @@
 
     </section>
 
+    <section id="modals" class="container grid-960">
+        <header class="text-center"><h4>modals</h4></header>
+        <section class="notes">
+            <p><strong>Modals</strong> are flexible dialog prompts.</p>
+        </section>
+        <div class="columns">
+            <div class="column">
+                <div class="modal-temp">
+                    <div class="modal-overlay"></div>
+                    <div class="modal-container" role="document">
+                        <div class="modal-header">
+                            <button type="button" class="btn btn-clear float-right" aria-label="Close"></button>
+                            <div class="modal-title">Modal title</div>
+                        </div>
+                        <div class="modal-body">
+                            <div class="content">
+                                <p>
+                                    This is the content inside the modal.
+                                </p>
+                                <h4>Lorem ipsum</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent risus leo, dictum in vehicula sit amet, feugiat tempus tellus. Duis quis sodales risus. Etiam euismod ornare consequat.</p>
+                                <p>Climb leg rub face on everything give attitude nap all day for under the bed. Chase mice attack feet but rub face on everything hopped up on goofballs.</p>
+                                <h4>Cupcake ipsum</h4>
+                                <p>Jelly-o sesame snaps halvah croissant oat cake cookie. Cheesecake bear claw topping. Chupa chups apple pie carrot cake chocolate cake caramels.</p>
+                                <p>De braaaiiiins apocalypsi gorger omero prefrontal cortex undead survivor fornix dictum mauris. Hi brains mindless mortuis limbic cortex soulless creaturas optic nerve.</p>
+                                <h4>Candy ipsum</h4>
+                                <p>Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar.</p>
+                                <p>Caerphilly swiss fromage frais. Brie cheese and wine fromage frais chalk and cheese danish fontina smelly cheese who moved my cheese cow.</p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-link">Close</button>
+                            <button class="btn btn-primary">Share</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="notes">
+            <p>Add a container element with the class <code>modal</code>. And add a real container <code>modal-container</code> and overlay <code>modal-overlay</code> inside it. You can add child elements with the class name <code>modal-header</code>, <code>modal-content</code> and <code>modal-footer</code> - any or all of them. </p>
+            <p>Spectre.css does not include JavaScript code, you will need to implement your JS to interact with modals. To make a modal appear, add the class <code>active</code> to the <code>modal</code> container</p>
+        </section>
+
+        <!-- modals example -->
+        <pre class="code lang-html">
+        &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;modal active&quot;</span>&gt;
+            &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;modal-overlay&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+            &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;modal-container&quot;</span>&gt;
+                &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;modal-header&quot;</span>&gt;
+                    &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-clear float-right&quot;</span>&gt;&lt;<span class="tag">/button</span>&gt;
+                    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;modal-title&quot;</span>&gt;Modal title&lt;<span class="tag">/div</span>&gt;
+                &lt;<span class="tag">/div</span>&gt;
+                &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;modal-body&quot;</span>&gt;
+                    &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;content&quot;</span>&gt;
+                        <span class="com">&lt;!-- content here --&gt;</span>
+                    &lt;<span class="tag">/div</span>&gt;
+                &lt;<span class="tag">/div</span>&gt;
+                &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;modal-footer&quot;</span>&gt;
+                    &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link&quot;</span>&gt;Close&lt;<span class="tag">/button</span>&gt;
+                    &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary&quot;</span>&gt;Share&lt;<span class="tag">/button</span>&gt;
+                &lt;<span class="tag">/div</span>&gt;
+            &lt;<span class="tag">/div</span>&gt;
+        &lt;<span class="tag">/div</span>&gt;
+        </pre>
+
+        <header class="text-center"><h5>modal sizes</h5></header>
+        <div class="columns">
+            <div class="column">
+                <div class="modal-temp modal-sm">
+                    <div class="modal-overlay"></div>
+                    <div class="modal-container" role="document">
+                        <div class="modal-header">
+                            <button type="button" class="btn btn-clear float-right" aria-label="Close"></button>
+                            <div class="modal-title">Modal title</div>
+                        </div>
+                        <div class="modal-body">
+                            <div class="content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-link">Close</button>
+                            <button class="btn btn-primary">Share</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="modal-temp modal-sm">
+                    <div class="modal-overlay"></div>
+                    <div class="modal-container" role="document">
+                        <div class="modal-header">
+                            <button type="button" class="btn btn-clear float-right" aria-label="Close"></button>
+                            <div class="modal-title">Modal title</div>
+                        </div>
+                        <div class="modal-body">
+                            <div class="content">
+                                <form>
+                                    <div class="form-group">
+                                        <label class="form-label" for="input-example-7">Name</label>
+                                        <input class="form-input" type="text" id="input-example-7" placeholder="Name" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Gender</label>
+                                        <label class="form-radio">
+                                            <input type="radio" name="gender" />
+                                            <i class="form-icon"></i> Male
+                                        </label>
+                                        <label class="form-radio">
+                                            <input type="radio" name="gender" checked />
+                                            <i class="form-icon"></i> Female
+                                        </label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-link">Close</button>
+                            <button class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="notes">
+            <p>Add the class <code>modal-sm</code> for a smaller modal dialog. </p>
+        </section>
+
+        <!-- modals example -->
+        <pre class="code lang-html">
+        &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;modal modal-sm&quot;</span>&gt;
+            &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;modal-overlay&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+            &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;modal-container&quot;</span>&gt;
+                <span class="com">&lt;!-- modal structure here --&gt;</span>
+            &lt;<span class="tag">/div</span>&gt;
+        &lt;<span class="tag">/div</span>&gt;
+        </pre>
+
+    </section>
+
+    <section id="loading" class="container grid-960">
+        <section class="notes">
+            <p><strong>Loading indicator</strong> is used for loading or updating. Also, you can add the class <code>loading</code> to buttons for loading status.</p>
+        </section>
+        <div class="columns">
+            <div class="column">
+                <div class="loading"></div>
+            </div>
+        </div>
+        <!-- loading example -->
+        <pre class="code lang-html">
+        <span class="com">&lt;!-- loading element --&gt;</span>
+        &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;loading&quot;</span>&gt;&lt;<span class="tag">/div</span>&gt;
+        </pre>
+
+    </section>
+
 </body>
 </html>
