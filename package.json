@@ -2,7 +2,7 @@
   "name": "simple.css",
   "version": "0.1.1",
   "homepage": "",
-  "author": "",
+  "author": "Lofreer <lofreer@gmail.com>",
   "description": "Simple.css: a lightweight, responsive and modern CSS framework.",
   "main": "simple.less",
   "repository": {
@@ -12,13 +12,8 @@
   "license": "MIT",
   "keywords": [
     "css",
-    "framework",
     "flexbox",
-    "responsive",
-    "mobile-friendly",
-    "front-end",
-    "less",
-    "modern"
+    "less"
   ],
   "bugs": {
     "url": "https://github.com/lofreer/simple/issues"
